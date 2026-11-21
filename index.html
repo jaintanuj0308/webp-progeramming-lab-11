@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 11 - User Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Validation</h1>
+        <p class="subtitle">Enter your login name and password to authenticate</p>
+
+        <form action="/login" method="POST">
+            <div class="form-group">
+                <label for="username">Login Name:</label>
+                <input type="text" id="username" name="username" placeholder="Enter username" required autofocus>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+            </div>
+
+            <button type="submit" class="btn">Submit to Server</button>
+        </form>
+
+        <div class="info-box">
+            <strong>Sample Database Records for Testing:</strong>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Password</th>
+                        <th>Role</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>admin</code></td>
+                        <td><code>admin123</code></td>
+                        <td>Administrator</td>
+                    </tr>
+                    <tr>
+                        <td><code>john</code></td>
+                        <td><code>pass456</code></td>
+                        <td>Student</td>
+                    </tr>
+                    <tr>
+                        <td><code>alice</code></td>
+                        <td><code>secret789</code></td>
+                        <td>Faculty</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="hint-text">Web Technology Lab Practical 11 &bull; Database Authentication</p>
+    </div>
+</body>
+</html>

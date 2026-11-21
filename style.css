@@ -1,0 +1,187 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 480px;
+    margin: 50px auto;
+    padding: 35px 30px;
+    background-color: #ffffff;
+    border: 1px solid #dcdfe6;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+/* Headings */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.subtitle {
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Forms */
+form {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #34495e;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b0d4f1;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.4);
+    outline: none;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 11px 22px;
+    background-color: #3498db;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+button.btn {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.btn-secondary {
+    background-color: #95a5a6;
+}
+
+.btn-secondary:hover {
+    background-color: #7f8c8d;
+}
+
+.btn-logout {
+    background-color: #e74c3c;
+}
+
+.btn-logout:hover {
+    background-color: #c0392b;
+}
+
+/* Result / Status Cards */
+.status-card {
+    padding: 25px;
+    border-radius: 6px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.status-card.success {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+.status-card.failure {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+.status-icon {
+    font-size: 45px;
+    margin-bottom: 12px;
+}
+
+.status-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.status-card.success .status-title {
+    color: #28a745;
+}
+
+.status-card.failure .status-title {
+    color: #dc3545;
+}
+
+/* Info Box */
+.info-box {
+    background-color: #f8f9fa;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 15px;
+    margin: 20px 0;
+    text-align: left;
+    font-size: 14px;
+}
+
+.info-box table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+}
+
+.info-box th, .info-box td {
+    padding: 6px 10px;
+    border: 1px solid #cbd5e1;
+    font-size: 13px;
+}
+
+.info-box th {
+    background-color: #e2e8f0;
+    text-align: left;
+}
+
+.hint-text {
+    font-size: 12px;
+    color: #7f8c8d;
+    margin-top: 15px;
+}
